@@ -1,0 +1,57 @@
+@use '../../scss/' as *;
+
+.login,
+.register {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 30%;
+    box-shadow: $box-shadow;
+
+    @include tablet {
+        max-width: 60%;
+    }
+    @include mobile {
+        max-width: 100%;
+    }
+
+    .login__name,
+    .register__name {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: rgb(54, 54, 54);
+    }
+
+    .form {
+        &__group {
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+
+
+    button {
+        font-size: 0.9rem;
+        padding: 0;
+        margin-bottom: 15px;
+
+        &:hover {
+            color: rgb(226, 220, 220);
+        }
+    }
+
+    &__regis {
+        margin-top: 20px;
+        a {
+            text-decoration: underline !important;
+            color: $main-color !important;
+        }
+    }
+}
+

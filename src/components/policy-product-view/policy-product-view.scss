@@ -1,0 +1,15 @@
+@use '../../scss/' as *;
+
+.policy__product {
+    @include flex(flex-start, flex-end);
+
+    &__icon {
+        color: $main-color;
+        font-size: 1.6rem;
+        margin-right: 20px;
+    }
+
+    &__info {
+        font-size: 0.9rem;
+    }
+}

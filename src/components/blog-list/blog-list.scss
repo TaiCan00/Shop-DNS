@@ -1,0 +1,70 @@
+@use '../../scss/' as *;
+
+.blog__list {
+    &__item {
+        border: 1px solid rgb(218, 215, 215);
+        margin-bottom: 50px;
+
+        &__img {
+            margin-bottom: 20px;
+        }
+
+        &__info {
+            padding: 0 30px;
+
+            &__status {
+                margin-bottom: 30px;
+                display: inline-block;
+                padding: 8px 16px;
+                background: rgb(247, 246, 246);
+                border-radius: 10px;
+                font-weight: 600;
+
+                &--new {
+                    color: rgb(245, 30, 30);
+                }
+                &--old {
+                    color: rgb(35, 68, 190);
+                }
+            }
+
+            &__name {
+                margin-bottom: 15px;
+                font-size: 1.4rem;
+                color: rgb(43, 45, 66);
+            }
+
+            &__desc {
+                font-size: 1rem;
+                line-height: 1.2rem;
+                color: rgb(136, 136, 167);
+                margin-bottom: 40px;
+            }
+
+            &__user {
+                @include flex(center, space-between);
+                margin-bottom: 20px;
+
+                &__info {
+                    @include flex(center, center);
+
+                    img {
+                        height: 40px;
+                        width: 40px;
+                        border: 1px solid;
+                        border-radius: 100rem;
+                        margin-right: 20px;
+                    }
+
+                    h2 {
+                        font-size: 1rem;
+                    }
+                }
+
+                &__date {
+                    color: rgb(136, 136, 167);
+                }
+            }
+        }
+    }
+}

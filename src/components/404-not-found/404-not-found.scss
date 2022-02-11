@@ -1,0 +1,9 @@
+@use '../../scss/' as *;
+
+.not__found {
+    @include flex(center, center);
+
+    img {
+        margin-top: 60px;
+    }
+  }

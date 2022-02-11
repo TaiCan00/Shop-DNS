@@ -1,0 +1,34 @@
+
+.scroll__top {
+    &__btn {
+        display: none;
+        position: fixed;
+        visibility: hidden;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+        bottom: 30px;
+        width: 50px;
+        transition: all 0.5s ease 0s;
+        z-index: 999;
+        height: 50px;
+        background: #aeaeae;
+        border-radius: 100%;
+        border: none;
+
+        &.active {
+            visibility: visible;
+            display: block;
+        }
+
+        &:hover {
+            background: #000;
+        }
+
+        &__icon {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}

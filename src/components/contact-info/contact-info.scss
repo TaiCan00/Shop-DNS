@@ -1,0 +1,21 @@
+@use '../../scss/' as *;
+
+.contact__item {
+    @include flex(flex-start, flex-start);
+    gap: 0 20px;
+    margin-bottom: 20px;
+
+    &__icon {
+        color: rgb(253, 176, 61);
+        font-size: 2rem;
+    }
+
+    &__info {
+        &__name {
+            margin-bottom: 10px;
+        }
+        &__title {
+            font-size: 1rem;
+        }
+    }
+}

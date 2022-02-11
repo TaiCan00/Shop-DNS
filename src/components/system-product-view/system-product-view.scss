@@ -1,0 +1,32 @@
+@use '../../scss/' as *;
+
+.system__product {
+    margin-bottom: 20px;
+
+    &__name {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+
+        &__item {
+            font-size: 0.9rem;
+            @include flex(center, flex-start);
+            padding: 10px;
+            color: rgb(44, 44, 44);
+
+            &:nth-child(odd) {
+                background: rgb(155, 240, 238);
+            }
+            &:nth-child(even) {
+                background: rgb(245, 245, 245);
+            }
+
+            &__left {
+                min-width: 150px;
+            }
+        }
+    }
+}

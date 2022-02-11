@@ -1,0 +1,10 @@
+@use '../../scss/' as *;
+
+.banner {
+    img {
+        // margin-bottom: 30px;
+        @include mobile {
+            max-width: 100%;
+        }
+    }
+}
